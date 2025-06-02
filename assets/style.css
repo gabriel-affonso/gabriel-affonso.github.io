@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base e cor de fundo - Estilo Notepad (modo noturno) */
+body {
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 1.6;
+  color: #D4D4D4;        /* Tom de branco para todo o texto */
+  background-color: #1E1E1E;
+}
+
+/* Layout geral */
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #252526;
+  border-bottom: 2px solid #3C3C3C;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #D4D4D4; /* Mantém a cor branca para a borda */
+  margin-bottom: 1rem;
+}
+
+/* Nome principal */
+.titulo-nome {
+  font-size: 2rem;
+  color: #D4D4D4;     /* Mesmo branco do corpo */
+  margin-bottom: 0.5rem;
+}
+
+/* Subtítulo (descrição rápida) */
+.subtitulo {
+  font-size: 1.1rem;
+  color: #D4D4D4;     /* Mesmo branco do corpo */
+}
+
+/* Estilização dos links globais */
+a {
+  color: #D4D4D4;     /* Link em branco */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #569CD6;     /* Fica um pouco azulado com o mouse por cima */
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Cada seção do site */
+.conteudo section {
+  margin-bottom: 2.5rem;
+}
+
+/* Título das seções (h2) */
+.conteudo h2 {
+  font-size: 1.75rem;
+  color: #D4D4D4;    /* Mesmo branco do corpo */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3C3C3C;
+  padding-bottom: 0.5rem;
+}
+
+/* Lista de itens (projetos, educação, etc.) */
+.lista-projetos {
+  list-style: none;
+}
+
+/* Estilo de cada item dentro da lista */
+.projeto-item {
+  background-color: #252526;
+  border: 1px solid #3C3C3C;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover para o item */
+.projeto-item:hover {
+  background-color: #2A2D2E;
+  border-color: #3C3C3C; /* Mantém borda escura no hover */
+}
+
+/* Título interno de projeto ou seção (h3) */
+.projeto-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+  color: #D4D4D4;    /* Mesmo branco do corpo */
+}
+
+/* Texto de parágrafos e listas dentro de projeto-item */
+.projeto-item p,
+.projeto-item ul li {
+  font-size: 1rem;
+  color: #D4D4D4;    /* Mesmo branco do corpo */
+}
+
+/* Seção de contato */
+#contato p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #D4D4D4;    /* Mesmo branco do corpo */
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #252526;
+  border-top: 2px solid #3C3C3C;
+  font-size: 0.9rem;
+  color: #D4D4D4;     /* Mesmo branco do corpo */
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .titulo-nome {
+    font-size: 1.5rem;
+  }
+  .conteudo {
+    margin: 1rem auto;
+  }
+}
